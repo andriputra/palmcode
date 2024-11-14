@@ -1,0 +1,278 @@
+/*
+ Theme Name: Custom Theme
+ Theme URI: http://example.com
+ Author: Agus Andri Putra
+ Author URI: http://example.com
+ Description: Special Theme Palm Code Test
+ Version: 1.0
+*/
+
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/* General Style Body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+/* Mobile Hamburger */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+nav.menu {
+    display: flex;
+}
+.navigation-area{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-fixed-menu{
+    border: 1px solid #D21411;
+    padding: 7px 25px;
+}
+.contact-fixed-menu:hover{
+    background-color: #D21411;
+}
+
+/* Logo */
+.custom-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #F0F0F0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.footer-widget {
+    flex: 1;
+    margin: 0 15px;
+}
+.footer-widget h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.75em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Jumbotron Section */
+.jumbotron {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.jumbotron .content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.jumbotron h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.jumbotron p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.button-cta a{
+    background-color: transparent;
+    border: 1px solid #D21411;
+    padding: 8px 30px;
+    display: inline-block;
+    margin-top: 3rem;
+    color: #ffffff;
+}
+.button-cta a:hover{
+    background-color: #D21411;
+}
+
+/* Content Boxes */
+.content-boxes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.content-boxes .box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-boxes .box h2 {
+    font-size: 1.5rem;
+}
+
+.content-boxes .box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        padding: 1em;
+    }
+    .hamburger {
+        display: flex;
+    }    
+    nav.menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        width: 100%;
+        padding: 1em;
+        z-index: 1000;
+    }
+    nav.menu.menu-open {
+        display: flex;
+    }
+    .content-boxes {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.hamburger.is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}

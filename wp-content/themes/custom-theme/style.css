@@ -314,183 +314,9 @@ section{
     margin-bottom: 40px;
 }
 
-.testimonial-slider {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    flex: 0 0 33.333%;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.card {
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px 25px;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.stars span{
-    background: url('../custom-theme/assets/images/star.svg');
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-}
-
-.card p {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    font-weight: 400;
-    margin-top: 10px;
-}
-
-.author {
-    font-style: italic;
-    color: #000000;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-button.prev,
-button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-button.prev {
-    left: -1px;
-}
-
-button.next {
-    right: -1px;
-}
-
 section.contact{
     padding: 50px 0px 100px;
 }
-form.contact-form{
-    width: 80%;
-    margin: 0 auto;
-}
-.contact-form-wrapper {
-    padding: 40px 0px;
-    text-align: left;
-}
-
-.contact-form-wrapper h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #000000;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-group {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.form-group input,
-.form-group select {
-    flex: 1;
-    padding: 10px 16px;
-    font-size: 14px;
-    border: none;
-    border-radius: 0px;
-    box-sizing: border-box;
-    height: 47px;
-}
-.form-group input:focus,
-.form-group select:focus,
-textarea:focus{
-    outline: none;
-}
-
-textarea {
-    width: 100%;
-    height: 120px;
-    padding: 10px 16px;
-    font-size: 14px;
-    border: none;
-    border-radius: 0px;
-    box-sizing: border-box;
-    resize: none;
-}
-
-.file-upload {
-    text-align: center;
-    border: 2px dashed #ccc;
-    padding: 50px 0px;
-    border-radius: 0px;
-    background: transparent;
-    cursor: pointer;
-}
-
-.file-upload label {
-    display: block;
-    color: #666;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.file-upload input {
-    display: none;
-}
-
-.disclaimer {
-    font-size: 12px;
-    color: #666;
-    margin: 10px 0;
-}
-
-.disclaimer a {
-    color: #D21411;
-    text-decoration: none;
-}
-.required{
-    color: #D21411;
-}
-form .button-cta{
-    background-color: transparent;
-    border: 1px solid #D21411;
-    padding: 15px 25px;
-    display: inline-block;
-    color: #000000;
-    width: 20%;
-    font-weight: 700;
-}
-form .button-cta:hover{
-    background-color: #D21411;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-
 
 /* Responsive Layout */
 @media (max-width: 768px) {
@@ -503,9 +329,6 @@ form .button-cta:hover{
         flex-direction: column;
         align-items: center;
     }
-    main {
-        padding: 1em;
-    }
     .hamburger {
         display: flex;
     }    
@@ -514,7 +337,7 @@ form .button-cta:hover{
         flex-direction: column;
         background-color: #333;
         position: absolute;
-        top: 60px; 
+        top: 87px; 
         right: 0;
         width: 100%;
         padding: 1em;
@@ -526,6 +349,14 @@ form .button-cta:hover{
     .content-boxes {
         grid-template-columns: repeat(2, 1fr); 
     }
+    .footer-widgets-container{
+        display: grid;
+        width: 100%;
+    }
+    .text-description p{
+        width: 100%;
+        padding: 0px 20px;
+    }
 }
 @media (max-width: 480px) {
     .container{
@@ -535,6 +366,46 @@ form .button-cta:hover{
     }
     .content-boxes {
         grid-template-columns: 1fr; 
+    }
+    .jumbotron .content {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .jumbotron h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+    .footer-widgets-container{
+        display: grid;
+        width: 100%;
+    }
+    .text-description p{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .title h1,
+    .about .field.one .title h1{
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about .field{
+        width: 100%;
+    }
+    .slide{
+        flex:100% 0 0;
+    }
+    form .button-cta{
+        width: auto;
+    }
+    section {
+        padding: 80px 0px;
     }
 }
 

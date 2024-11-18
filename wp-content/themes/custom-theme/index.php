@@ -92,57 +92,7 @@ get_header();
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="testimonial-slider">
-                <div class="slider-wrapper">
-                    <div class="slide">
-                        <div class="card">
-                            <div class="stars">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <span class="author">Lorem Ipsum</span>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="card">
-                            <div class="stars">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <span class="author">Lorem Ipsum</span>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="card">
-                            <div class="stars">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <span class="author">Lorem Ipsum</span>
-                        </div>
-                    </div>
-                </div>
-                <button class="prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ic-left.png" alt="chevron"/></button>
-                <button class="next"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ic-right.png" alt="chevron"/></button>
-            </div>
+            <?php echo do_shortcode('[review_slider]'); ?>
         </div>
     </section>
 
@@ -151,7 +101,7 @@ get_header();
             <div class="bg-grey">
                 <div class="contact-form-wrapper">
                     <h2>Kontaktformular</h2>
-                    <form class="contact-form" method="POST" enctype="multipart/form-data">
+                    <!-- <form id="contactForm" class="contact-form" enctype="multipart/form-data">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Name*" required>
                             <input type="email" name="email" placeholder="E-Mail*" required>
@@ -168,16 +118,19 @@ get_header();
                         <textarea name="message" placeholder="Nachricht"></textarea>
                         <div class="file-upload">
                             <label for="file">
-                                Dateien hochladen (z.B. deinen Lebenslauf hochladen, Zeugnisse,..)
-                                <input type="file" id="file" name="attachment">
+                                Dateien hochladen (nur Bilddateien erlaubt)
+                                <input type="file" id="file" name="attachment" accept="image/*">
                             </label>
+                            <div id="fileNameDisplay" style="margin-top: 10px; font-style: italic; color: #333;"></div>
                         </div>
                         <p class="disclaimer">
                             Mit (<span class="required">*</span>) markierte Felder sind Pflichtfelder.<br>
                             Mit dem Absenden bestätige ich die <a href="#" target="_blank">Datenschutzinformation</a> gelesen zu haben und bestätige diese.
                         </p>
-                        <button type="submit" name="submit" class="button-cta">JETZ ANFRAGEN</button>
-                    </form>
+                        <div id="formMessage"></div>
+                        <button type="submit" class="button-cta">JETZ ANFRAGEN</button>
+                    </form> -->
+                    <?php echo do_shortcode('[custom_contact_form]'); ?>
                 </div>
             </div>
         </div>

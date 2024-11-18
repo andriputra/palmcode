@@ -11,11 +11,7 @@ function custom_theme_setup() {
         'flex-height' => true,   
         'flex-width'  => true,  
     ]);
-}
-add_action('after_setup_theme', 'custom_theme_setup');
-
-function theme_register_footer_widgets() {
-    register_sidebar([
+   register_sidebar([
         'name'          => __('Footer Widget Area', 'textdomain'),
         'id'            => 'footer-widgets',
         'description'   => __('Widgets added here will appear in the footer.', 'textdomain'),
@@ -25,7 +21,7 @@ function theme_register_footer_widgets() {
         'after_title'   => '</h4>',
     ]);
 }
-add_action('widgets_init', 'theme_register_footer_widgets');
+add_action('after_setup_theme', 'custom_theme_setup');
 
 function custom_theme_enqueue_scripts() {
     wp_enqueue_style('custom-style', get_stylesheet_uri());

@@ -146,7 +146,7 @@ get_header();
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="Contact">
         <div class="container">
             <div class="bg-grey">
                 <div class="contact-form-wrapper">

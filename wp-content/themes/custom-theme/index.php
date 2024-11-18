@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <main>
-    <section class="jumbotron">
+    <div class="jumbotron">
         <div class="overlay">
             <div class="content">
                 <h1>Sicherheit für Ihr Zuhause und Unternehmen</h1>
@@ -13,23 +13,176 @@ get_header();
                 </div>
             </div>
         </div>
+    </div>
+
+    <section class="service">
+        <div class="text-description">
+            <div class="title">
+                <h1>OUR SERVICES</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="container">
+                <div class="content-boxes">
+                    <div class="box">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/signal.svg" alt="Einbruchsanlagen Icon" />
+                        <div class="desc">
+                            <h2>Einbruchsanlagen</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/video.svg" alt="Brandmeldeanlagen Icon" />
+                        <div class="desc">
+                            <h2>Brandmeldeanlagen</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bell.svg" alt="Brandmeldeanlagen Icon" />
+                        <div class="desc">
+                            <h2>Brandmeldeanlagen</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock.svg" alt="Rauchabzugsanlagen Icon" />
+                        <div class="desc">
+                            <h2>Rauchabzugsanlagen</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/warning.svg" alt="Brandmeldeanlagen Icon" />
+                        <div class="desc">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>Lorem Ipsum</h2>
+                        <p class="strong">Jetzt Anfragen ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Section 2: Content Boxes -->
-    <section class="content-boxes">
-        <div class="box">
-            <h2>Konten 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae quam sit amet felis consequat volutpat.</p>
-        </div>
-        <div class="box">
-            <h2>Konten 2</h2>
-            <p>Donec facilisis nisi sit amet erat fermentum, non condimentum libero rhoncus. Maecenas et ante id nisi tempor elementum.</p>
-        </div>
-        <div class="box">
-            <h2>Konten 3</h2>
-            <p>Nulla ac orci at arcu euismod interdum sed ac urna. Vivamus sit amet felis a justo vehicula eleifend a ut ante.</p>
+    <section class="bg-grey">
+        <div class="container">
+            <div class="about">
+                <div class="field one">
+                    <div class="title">
+                        <h1>Unser<br/>Unternehmen</h1>
+                    </div>
+                    <p>Die Firma Alarmanlagenbau-Korsing GmbH & Co. KG
+                    gibt es seit dem 1.10.1990. Unseren Kunden bieten wir einen 24-Stunden-Service an. Alle Zulassungen, die man für eine erfolgreiche Arbeit auf dem Gebiet der elektronischen Sicherheitstechnik benötigt, sind vorhanden</p>
+                </div>
+                <div class="field two">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/unser.png" alt="unser" class="img" />
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="review">
+        <div class="container">
+            <div class="review-box">
+                <div class="title">
+                    <h1 class="uppercase">Was unsere Kunden sagen</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="slider-wrapper">
+                    <div class="slide">
+                        <div class="card">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="author">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="author">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <div class="stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <span class="author">Lorem Ipsum</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ic-left.png" alt="chevron"/></button>
+                <button class="next"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/ic-right.png" alt="chevron"/></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="bg-grey">
+                <div class="contact-form-wrapper">
+                    <h2>Kontaktformular</h2>
+                    <form class="contact-form" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name*" required>
+                            <input type="email" name="email" placeholder="E-Mail*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Telefonnummer*" required>
+                            <select name="services" required>
+                                <option value="" disabled selected>Services*</option>
+                                <option value="Service 1">Service 1</option>
+                                <option value="Service 2">Service 2</option>
+                                <option value="Service 3">Service 3</option>
+                            </select>
+                        </div>
+                        <textarea name="message" placeholder="Nachricht"></textarea>
+                        <div class="file-upload">
+                            <label for="file">
+                                Dateien hochladen (z.B. deinen Lebenslauf hochladen, Zeugnisse,..)
+                                <input type="file" id="file" name="attachment">
+                            </label>
+                        </div>
+                        <p class="disclaimer">
+                            Mit (<span class="required">*</span>) markierte Felder sind Pflichtfelder.<br>
+                            Mit dem Absenden bestätige ich die <a href="#" target="_blank">Datenschutzinformation</a> gelesen zu haben und bestätige diese.
+                        </p>
+                        <button type="submit" name="submit" class="button-cta">JETZ ANFRAGEN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </main>
 
 <?php

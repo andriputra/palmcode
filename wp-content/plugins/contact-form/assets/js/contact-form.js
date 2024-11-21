@@ -31,4 +31,5 @@ jQuery(document).ready(function ($) {
             },
         });
     });
+    console.log('link:', myAjax.ajax_url);
 });

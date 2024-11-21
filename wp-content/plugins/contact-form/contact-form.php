@@ -72,11 +72,14 @@ add_action('wp_enqueue_scripts', 'enqueue_contact_form_assets');
 // Handle AJAX submission
 if (!function_exists('handle_contact_form_submission')) {
     function handle_contact_form_submission() {
+        error_log('AJAX handler called');
         // Verify nonce
         if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'contact_form_nonce')) {
             wp_send_json_error(['message' => 'Nonce verification failed.']);
             return;
         }
+
+        error_log(print_r($_POST, true));
 
         // Validate and sanitize inputs
         $name = sanitize_text_field($_POST['name']);
